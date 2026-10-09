@@ -3,12 +3,12 @@ from django.http import HttpResponse,JsonResponse
 
 
 def index_viwe(request):
-    return HttpResponse('home page')
+    return render(request , 'website/index.html')
 
 def about_viwe(request):
-    return HttpResponse('about page')
+    return render(request , 'website/about.html')
 
 def contact_viwe(request):
-    return HttpResponse('contact page')
+    return render(request , 'website/contact.html')
 
 
