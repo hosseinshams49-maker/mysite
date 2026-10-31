@@ -1,29 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>about</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه اصلی</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Tahoma;
+        }
+         /* کل صفحه با 100 استفاده بشه */
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* نوار بالایی */
+        /* بیست برای فاصله عنصر لوگو و منو از کنار صفحه */
+        /* دوازده ارتفاع هدر سایت*/
+        .header {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+        }
+        /* فاصله عناصر درون هدر 20 باشه */
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu p {
+            color: white;
+            font-size: 12px;
+        }
+
+        /* بخش اصلی */
+        /* با یک کل فضای باقی مونده رو میگیره*/
+        .main {
+            display: flex;
+            flex: 1;
+        }
+
+        /* منوی کناری */
+        /* سیزده درصد کل عرض*/
+
+        .sidebar {
+            background-color: #ddd;
+            width: 13%;
+            padding: 25px 15px;
+        }
+
+        .sidebar h3 {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .sidebar p {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* محتوای صفحه */
+        .content {
+            background-color: #f4f4f4;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content h2 {
+            font-size: 22px;
+        }
+
+        /* پایین صفحه */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+        }
+    </style>
 </head>
 
+<body>
 
-<body style="background-color: aquamarine;">
-  <div
-    style="display: flex; justify-content: space-between; background-color: brown; align-items: center; margin-right: 25px;">
-    <h1>class site</h1>
-    <div style="display: flex; align-items: center;">
-      <button>home</button>
-      <button>contact</button>
-      <button>menu</button>
+    <div class="container">
+
+        <div class="header">
+
+            <div>
+                <p>لوگوی سایت</p>
+            </div>
+
+            <div class="menu">
+                <p>خانه</p>
+                <p>محصولات</p>
+                <p>درباره ما</p>
+                <p>تماس با ما</p>
+            </div>
+
+            <div>
+                <p>منو</p>
+            </div>
+
+        </div>
+
+        <div class="main">
+
+            <div class="sidebar">
+
+                <h3>منوی کناری</h3>
+
+                <p>نوشته‌ها</p>
+                <p>دسته‌بندی‌ها</p>
+                <p>تنظیمات</p>
+                <p>پیام‌ها</p>
+                <p>خروج</p>
+
+            </div>
+
+            <div class="content">
+
+                <h2>به سایت ما خوش آمدید</h2>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <p>تمامی حقوق محفوظ است.</p>
+
+        </div>
+
     </div>
-  </div>
 
-  <div style=" width: 100vw; height: 10vw;">
-    <p>hello class</p>
-    <p>hello</p>
-
-  </div>
 </body>
 
 </html>
